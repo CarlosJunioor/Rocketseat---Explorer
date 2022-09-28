@@ -11,13 +11,13 @@
   --fc-texting: hsl(274, 84%, 12%);
   --fc-card: hsl(232, 17%, 35%);
 
-  --fs-heading: clamp(4.0rem, 1rem + 3vw, 4rem);
-  --fs-texting: clamp(2.0rem, 0.5rem + 2vw, 4rem);
-  --fs-card: clamp(2.0rem, 1rem + 1vw, 2rem);
+  --fs-heading: clamp(4rem, 1rem + 3vw, 2rem);
+  --fs-texting: clamp(1rem, 0.5rem + 3vw, 2rem);
+  --fs-card: clamp(2rem, 0.5rem + 3vw, 2rem);
 
-  --ff-heading: 'Staatliches', cursive;
-  --ff-texting: 'Palanquin', sans-serif;
-  --ff-card: 'Staatliches', cursive;
+  --ff-heading: "Staatliches", cursive;
+  --ff-texting: "Palanquin", sans-serif;
+  --ff-card: "Staatliches", cursive;
 
   --bg-header: hsl(218, 17%, 62%);
   --bg-h1: hsl(275, 18%, 79%);
@@ -26,7 +26,7 @@
 }
 
 .page::before {
-  content: '';
+  content: "";
   width: 38.4rem;
   height: 27.9rem;
   background: var(--bg-header);
@@ -37,7 +37,6 @@
   left: 0;
 
   z-index: -1;
-
 }
 
 .logo {
@@ -93,7 +92,7 @@ main p {
   padding-top: 14px;
   font-weight: 400;
   line-height: 15px;
-  
+
   text-align: center;
 }
 
@@ -126,13 +125,17 @@ section h2 {
   text-align: center;
 }
 
-
-
-.card-cream {
+.card-cream:nth-child(1) {
   padding-top: 63px;
 }
 
+.card-cream {
+  padding-top: 32px;
+}
 
+.last {
+  padding-top: 60px;
+}
 
 h2 {
   animation: topdown 700ms 350ms backwards;
@@ -150,9 +153,8 @@ h2 {
   }
 }
 
-
 .card-cream img {
-  animation: downtop 1s backwards;
+  animation: downtop 1.2s backwards;
 }
 
 @keyframes downtop {
@@ -167,3 +169,11 @@ h2 {
   }
 }
 
+@media (min-width: 70rem) {
+  .page {
+    max-height: 1280px;
+    max-width: 720px;
+    background: var(--bg-header);
+    display: flex;
+  }
+}
