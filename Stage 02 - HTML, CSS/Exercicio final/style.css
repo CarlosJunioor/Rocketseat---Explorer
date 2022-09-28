@@ -23,6 +23,12 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #818181;
+  font-size: bold;
+  font-weight: bold;
+}
+
 ul {
   display: flex;
   list-style-type: none;
