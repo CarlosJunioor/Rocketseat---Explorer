@@ -184,10 +184,10 @@ footer a {
   }
 
   .card + .card {
-    margin-top: 0;
+    margin-top: ;
   }
 
-  
+ 
 
   header p {
     font-family: var(--ff-texting-desktop);
@@ -208,16 +208,14 @@ footer a {
     max-width: 90rem;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
 
     gap: 3.2rem;
     padding: 3.2rem;
-
     grid-area: main;
     grid-template-areas:
       "A B"
-      "D B"
-      "D E";
+      "D C"
+      "E F";
   }
 
   main .A {
@@ -229,15 +227,23 @@ footer a {
   }
 
   main .C {
-    grid-area: E;
+    grid-area: C;
   }
 
   main .D {
     grid-area: D;
   }
 
+  main .E {
+    grid-area: A;
+  }
+
+  main .F {
+    grid-area: D;
+  }
+
   footer {
-    display: block;
+    display: contents;
     grid-area: footer;
 }
   main p {
